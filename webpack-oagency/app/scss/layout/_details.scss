@@ -1,0 +1,42 @@
+.details {
+    background-color: $color-border;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    &__address {
+        margin-left: 100px;
+        &__title {
+            color: $color-main;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        &__street {
+            margin: 10px 0;
+        }
+    }
+    &__nav {
+        display: flex;
+        margin-right: 50px;
+        margin-left: 50px;
+        &__list {
+            margin-right: 100px;
+            margin-left: 20px;
+            ul {
+                color: $color-blue;
+                li::before {
+                    content: "•"; 
+                    color: $color-main;
+                    padding-right: 5px;
+                    line-height: 25px;
+                }
+            }
+        }
+        &__title {
+            font-weight: bold;
+            color: $color-main;
+            margin-bottom: 10px;
+        }
+
+        
+    }
+}

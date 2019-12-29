@@ -4,13 +4,13 @@
     display:flex;
     justify-content: space-between;
     margin: 20px 0;
-    .nav-header__title {
+    &__title {
         margin-left: 100px;
         color: $color-blue;
         font-size: $font-size-title;
         font-weight: bold;
     }
-    .nav-header__list {
+    &__list {
         ul {
             display: flex; 
             margin-right: 100px;

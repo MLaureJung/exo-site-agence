@@ -10,8 +10,10 @@
     'base/base';
 
 @import
-    'layout/articles';
+    'layout/articles',
+    'layout/slider';
 
 @import
     'components/article',
-    'components/actu-header'
+    'components/actu-header',
+    'components/slider-info';

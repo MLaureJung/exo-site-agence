@@ -1,0 +1,25 @@
+.call {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    &__title {
+        color: $color-alt;
+        font-size: $font-size-title;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__description {
+        color: $color-alt;
+        font-weight: bold;
+        font-size: $font-size-normal;
+        margin-bottom: 30px;
+    }
+    &__buttons {
+        .btn {
+            color: $color-alt;
+            font-size: $font-size-normal;
+        }
+    }
+}

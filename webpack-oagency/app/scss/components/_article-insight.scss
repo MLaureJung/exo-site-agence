@@ -1,0 +1,31 @@
+
+
+.grid-item {
+    width: 200px;
+    border-top: 1px solid $color-border;
+    img {
+        margin-bottom: 10px;
+    }
+    &__image {
+        margin-top: 10px;
+    }
+    &__title {
+        font-size: $font-size-title;
+        font-weight: bold; 
+        margin-bottom: 10px;
+    }
+    &__content {
+        font-size: $font-size-normal;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    &__read {
+        display: inline-block;
+        font-size: $font-size-normal;
+        border: 1px solid $color-border;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+
+}

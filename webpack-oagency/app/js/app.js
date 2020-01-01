@@ -1,3 +1,4 @@
+// require('jarallax');
 var jQueryBridget = require('jquery-bridget');
 var Masonry = require('masonry-layout');
 jQueryBridget( 'masonry', Masonry, $ );
@@ -13,6 +14,10 @@ var app = {
       gutter: 10
       
     })
+
+    // $('.jarallax').jarallax({
+    //   speed: 0.2
+    // })
   }
 
 };

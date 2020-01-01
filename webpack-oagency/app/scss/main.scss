@@ -16,10 +16,17 @@
     'layout/actu',
     'layout/call',
     'layout/details',
-    'layout/footer';
+    'layout/footer',
+    'layout/projects',
+    'layout/generique',
+    'layout/siteweb';
 
 @import
-    'components/article',
+    'components/article-insight',
     'components/actu-header',
     'components/slider-info',
-    'components/footer-buttons';
+    'components/footer-buttons',
+    'components/project-insight',
+    'components/project',
+    'components/article',
+    'components/sidebar';

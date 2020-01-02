@@ -6,7 +6,16 @@
       font-family: $font-family;
   }
 
+
   a {
     text-decoration: none;
     color: $color-main;
+  }
+
+  h3 {
+    font-size: $font-size-normal!important;
+  }
+
+  h4 {
+    font-size: 1.2em!important;
   }

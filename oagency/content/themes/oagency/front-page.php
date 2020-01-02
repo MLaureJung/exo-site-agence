@@ -1,6 +1,7 @@
 
 <?php get_header(); ?>
     
+
     <?php get_template_part('template-parts/banner'); ?>
       
         <section class="actu">
@@ -17,10 +18,29 @@
               </h4>
             </div>
           </div>
+          
           <div class="actu__posts">
             <div class="grid">
-                
-            <?php get_template_part('template-parts/post-excerpt'); ?>
+            
+            <?php $args = [
+            //'post_type' => 'post',
+            'posts_per_page' => 6,
+            'orderby' => 'rand',
+            'order' => 'DESC',
+        ];
+
+        $wpqueryArticles = new WP_Query($args);
+
+        ?>
+
+        <?php if ($wpqueryArticles->have_posts()) : while ($wpqueryArticles->have_posts()) : $wpqueryArticles->the_post(); ?>
+               
+                <!-- // pour chaque article, on charge le template post-excerpt -->
+                <?php get_template_part('template-parts/post-excerpt'); ?>
+
+        <?php endwhile;
+        endif; ?>
+          
               
              </div>
           </div>

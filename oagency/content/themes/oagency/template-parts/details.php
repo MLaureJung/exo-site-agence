@@ -1,7 +1,7 @@
-<section class="details">
+<section class="details" style="color:<?php echo get_theme_mod('oagency_footer_text_color'); ?>">
 <div class="details__address">
     <div class="details__address__title">
-        <h4>oAgency</h3>
+        <h4 style="color:<?php echo get_theme_mod('oagency_footer_text_color'); ?>">oAgency</h3>
     </div>
     <div class="details__address__street">
         <h4>158 allée de la Garde 75001 Paris</h3>
@@ -13,7 +13,7 @@
     <nav class="details__nav">
     <div class="details__nav__pages">
         <div class="details__nav__title">
-        <h4>Pages</h3>
+        <h4 style="color:<?php echo get_theme_mod('oagency_footer_text_color'); ?>">Pages</h3>
         </div>
         <div class="details__nav__list">
         <ul>
@@ -28,7 +28,7 @@
     </div>
     <div class="details__nav__equipe">
         <div class="details__nav__title">
-        <h4>Equipe</h3>
+        <h4 style="color:<?php echo get_theme_mod('oagency_footer_text_color'); ?>">Equipe</h3>
         </div>
         <div class="details__nav__list">
         <ul>
@@ -39,7 +39,7 @@
     </div>
     <div class="details__nav__Archives">
         <div class="details__nav__title">
-        <h4>Archives</h3>
+        <h4 style="color:<?php echo get_theme_mod('oagency_footer_text_color'); ?>">Archives</h3>
         </div>
         <div class="details__nav__list">
         <ul>

@@ -10,7 +10,7 @@
     </div>
     <div class="grid-item__read">
     <h3>
-        <a href="<?php the_permalink(); ?>">Lire - <?php the_title(); ?></a>
+        <a href="<?php the_permalink(); ?>" style="color:<?php echo get_theme_mod('oagency_colors_lkcolor');?>">Lire - <?php the_title(); ?></a>
     </h3>
     </div>
 </div>

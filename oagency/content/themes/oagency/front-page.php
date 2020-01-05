@@ -102,8 +102,12 @@
 
 <?php endif; ?>
         
-    
-        <?php get_template_part('template-parts/details'); ?>
+<?php if (get_theme_mod('oagency_footer_active')): ?>
+
+       
+    <?php get_template_part('template-parts/details'); ?>
           
        
 <?php get_footer(); ?>
+
+<?php endif; ?>

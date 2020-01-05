@@ -45,30 +45,32 @@
     </div>
   </section>
 <?php endif; ?>
-      
-        <section class="actu">
-          <div class="actu__header">
-            <div class="actu__title">
-              <h2>Nos actualités</h2>
-            </div>
-            <div class="actu__description">
-              <p>Découvrez nos ernières actualités lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="actu__link">
-              <h4>
-                <a href="#">Actualités </a>
-              </h4>
-            </div>
-          </div>
+
+
+<?php if (get_theme_mod('oagency_posts_active')): ?>
+
+        <?php get_template_part('template-parts/actu'); ?>
           
-          <div class="actu__posts">
-            <div class="grid">
+<?php if (get_theme_mod('oagency_posts_count')) {
+    $nb_posts = get_theme_mod('oagency_posts_count');
+  } ?>
+
+<?php if ($nb_posts != 0) : ?>
+
+  <div class="actu__posts">
+    <div class="grid">
             
-            <?php $args = [
-            //'post_type' => 'post',
-            'posts_per_page' => 6,
-            'orderby' => 'rand',
-            'order' => 'DESC',
+
+        <?php if (get_theme_mod('oagency_posts_category')) {
+        $category = get_theme_mod('oagency_posts_category');
+      } ?>
+        
+        <?php $args = [
+        //'post_type' => 'post',
+        'posts_per_page' => $nb_posts,
+        'orderby' => 'rand',
+        'order' => 'DESC',
+        'category_name' => $category
         ];
 
         $wpqueryArticles = new WP_Query($args);
@@ -77,11 +79,19 @@
 
         <?php if ($wpqueryArticles->have_posts()) : while ($wpqueryArticles->have_posts()) : $wpqueryArticles->the_post(); ?>
                
-                <!-- // pour chaque article, on charge le template post-excerpt -->
-                <?php get_template_part('template-parts/post-excerpt'); ?>
+            <?php get_template_part('template-parts/post-excerpt'); ?>
 
         <?php endwhile;
         endif; ?>
+      <?php endif; ?>
+   
+    </div>
+  </div>
+
+<?php endif; ?>
+
+
+
           
               
              </div>

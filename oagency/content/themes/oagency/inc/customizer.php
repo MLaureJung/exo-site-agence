@@ -1,6 +1,7 @@
 <?php 
 
 require 'customizer/oagency_carousel.php';
+require 'customizer/oagency_posts.php';
 
 if (!function_exists('oagency_customize_register')) {
 
@@ -28,7 +29,17 @@ if (!function_exists('oagency_customize_register')) {
             ]
         );
 
+        $wp_customize->add_section(
+            'oagency_posts',
+            [
+                'title' => 'Posts',
+                'description' => 'oAgency Posts',
+                'panel' => 'oagency_theme_panel'
+            ]
+            );
+
         oagency_carousel($wp_customize);
+        oagency_posts($wp_customize);
 
     }
 

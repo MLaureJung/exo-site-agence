@@ -1,11 +1,13 @@
-<img class="jarallax-img" src="images/arbre.jpg" alt="arbre">
+
+<img class="jarallax-img" src="<?php echo (get_theme_mod('oagency_call_image')); ?>" alt="arbre">
     <div class="jarallax__title">
-    <h2>Hello</h2>
+    <h2><?php echo get_theme_mod('oagency_call_title'); ?></h2>
     </div>
     <div class="jarallax__description">
-    <h2>Call to action - Lorem ipsum dolor sit amet.</h2>
+    <h2><?php echo get_theme_mod('oagency_content'); ?></h2>
     </div>
     <div class="jarallax__buttons">
-    <button type="button" class="btn btn-warning">Button click</button>
-    <button type="button" class="btn btn-success">Another button</button>
+    <a href="<?php echo get_theme_mod('oagency_call_link_btn_1');?>"><button type="button" class="btn btn-warning"><?php echo get_theme_mod('oagency_call_text_btn_1');?></button></a>
+    <a href="<?php echo get_theme_mod('oagency_call_link_btn_2');?>">
+    <button type="button" class="btn btn-success"><?php echo get_theme_mod('oagency_call_text_btn_2');?></button></a>
 </div>

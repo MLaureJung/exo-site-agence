@@ -2,6 +2,7 @@
 
 require 'customizer/oagency_carousel.php';
 require 'customizer/oagency_posts.php';
+require 'customizer/oagency_call.php';
 
 if (!function_exists('oagency_customize_register')) {
 
@@ -38,8 +39,20 @@ if (!function_exists('oagency_customize_register')) {
             ]
             );
 
+        $wp_customize->add_section(
+            'oagency_call',
+            [
+                'title'=> 'Call To Action',
+                'description' => 'oAgency Call to action',
+                'panel' => 'oagency_theme_panel'
+            ]
+        );
+
+
+
         oagency_carousel($wp_customize);
         oagency_posts($wp_customize);
+        oagency_call($wp_customize);
 
     }
 

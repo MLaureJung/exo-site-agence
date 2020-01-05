@@ -91,20 +91,19 @@
 <?php endif; ?>
 
 
-
+<?php if (get_theme_mod('oagency_call_active')): ?>
           
               
-             </div>
-          </div>
-        </section>
         <section data-jarallax data-speed="0.2" class="jarallax" >
     
             <?php get_template_part('template-parts/call-to-action'); ?>
     
         </section>
+
+<?php endif; ?>
         
     
         <?php get_template_part('template-parts/details'); ?>
           
        
-     <?php get_footer(); ?>
+<?php get_footer(); ?>

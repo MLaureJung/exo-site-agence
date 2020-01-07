@@ -39,6 +39,6 @@ $query = new WP_Query($args); ?>
         endif; ?>
            
     </section>
-<?php get_sidebar(); 
+<?php get_sidebar('widget_area'); 
 get_template_part('template-parts/details');
 get_footer(); ?>

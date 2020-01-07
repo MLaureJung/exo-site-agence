@@ -8,6 +8,7 @@ if (!function_exists('oagency_setup')) {
 
         add_theme_support('post-thumbnails');
 
+    
         register_nav_menus([
             'header-nav' => 'Menu du header',
             'footer-nav' => 'Menu du footer'
